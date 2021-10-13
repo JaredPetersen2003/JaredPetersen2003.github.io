@@ -1,0 +1,292 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
+
+html {
+    overflow-x: hidden;
+}
+
+
+* {
+    font-family: 'HK Grotesk', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #3a3a3b;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+a {
+    color: #1DC5F6;
+    size: 232px;
+}
+
+.navbar {
+    border-bottom: 1px solid #cccccc;
+}
+
+.landing-message {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+
+}
+
+.landing-message h1,
+.landing-message p {
+    color: white;
+}
+
+.btn {
+    border-radius: 30px;
+}
+
+.btn-primary {
+    background-color: #1DC5F6;
+    border-color: #1DC5F6;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #5f90f8;
+    border-color: #5f90f8;
+    color: white;
+}
+
+.btn-primary:focus {
+    background-color: #5f90f8;
+    border-color: #5f90f8;
+    color: white;
+}
+
+.landing {
+    height: 93vh;
+    margin-top: 70px;
+}
+
+
+.carousel-img {
+    height: 93vh;
+    filter: brightness(50%);
+}
+
+.slogan {
+    margin-top: 5em;
+}
+
+.slogan-heading {
+    color: #1DC5F6;
+}
+
+.line-break {
+    display: flex;
+    flex-direction: row;
+}
+
+.line-break:before,
+.line-break:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+    border-color: #6e6e74;
+}
+
+.line-break:before {
+    margin-right: 10px
+}
+
+.line-break:after {
+    margin-left: 10px
+}
+
+.services {
+    margin-top: 7em;
+    margin-bottom: 5em;
+}
+
+.service-container {
+    margin-top: 7em;
+}
+
+.service-item {
+    border-right: 1px solid;
+    border-color: #cccccc;
+}
+
+.service-item h6,
+.service-item-right h6 {
+    font-weight: 600;
+}
+
+
+.about-content {
+    width: 100vw;
+    background-color: #f9f9f9;
+    margin-left: 0;
+    padding-top: 50px;
+    position: relative;
+    top: -320px;
+    margin-bottom: -320px;
+}
+
+.about-image{
+    position: relative;
+    z-index: 1;    
+}
+
+.Partners{
+    padding-top: 50px;
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 576px) {
+    .about-content {
+        padding-top: 30px;
+        top: 0px;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .service-item,
+    .service-item-right {
+        padding-top: 1em;
+        border-right: 0px;
+    }
+
+    .about-image {
+        padding-left: 1em;
+        margin-bottom: 2em;
+        height: 300px;
+        width: 300px;
+    }
+
+    .about-content {
+        padding-left: 4em;
+        padding-right: 4em;
+        width: 100vw;
+    }
+
+    .btn-work {
+        margin-left: 40vw;
+    }
+
+    .gallery-heading {
+        margin-left: 20px;
+    }
+
+    .gallery-images img {
+        width: 25vw;
+    }
+
+    .about-content {
+        width: 100vw;
+        background-color: #f9f9f9;
+        margin-left: 0;
+
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    .stat-info {
+        position: relative;
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%, -200%);
+    }
+    
+
+}
+
+.background {
+    color: #6e6e74;
+}
+
+.btn-work {
+    height: 50px;
+    width: 150px;
+}
+
+
+.lightbox-gallery {
+    overflow-x: hidden
+}
+
+
+.photos div {
+    padding: 0 0 0 0;
+}
+
+.item{
+    overflow: hidden;
+    background-color: #1DC5F6;
+}
+
+.item img{
+    transition: transform .5s ease, opacity .5s ease;
+}
+
+.item img:hover{
+    transform: scale(1.3); 
+    opacity: 40%;
+}
+
+.user{
+    border-radius: 50%;
+    box-shadow:
+      1px 2px 2px hsl(220deg 60% 50% / 0.333),
+      2px 4px 4px hsl(220deg 60% 50% / 0.333),
+      3px 6px 6px hsl(220deg 60% 50% / 0.333);
+    margin-bottom: 3em;
+}
+
+.stats {
+    margin-top: 5em;
+    
+}
+
+.stats img {
+    filter: brightness(30%);
+}
+
+.stat-info {
+    position: relative;
+    top: -200px;
+    margin-bottom: -200px;
+    padding: 10px;
+
+}
+
+.stat-info h4,
+.stat-info h1 {
+    color: white;
+}
+
+.display-4{
+    font-weight: 700;
+}
