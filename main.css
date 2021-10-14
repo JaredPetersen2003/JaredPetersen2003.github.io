@@ -146,8 +146,8 @@ a {
     margin-left: 0;
     padding-top: 50px;
     position: relative;
-    top: -320px;
-    margin-bottom: -320px;
+    top: -380px;
+    margin-bottom: -380px;
 }
 
 .about-image{
@@ -157,8 +157,10 @@ a {
 
 .Partners{
     padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #f9f9f9;
 }
+
 
 @media (max-width: 576px) {
     .about-content {
@@ -167,7 +169,16 @@ a {
         margin-bottom: 0px;
     }
 
+    .about-image{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;    
+    }
+
 }
+
+
 
 @media (max-width: 768px) {
 
@@ -277,7 +288,7 @@ a {
 .stat-info {
     position: relative;
     top: -200px;
-    margin-bottom: -200px;
+    margin-bottom: -10px;
     padding: 10px;
 
 }
@@ -289,4 +300,29 @@ a {
 
 .display-4{
     font-weight: 700;
+}
+
+.price-plan{
+    background-color: #f9f9f9;
+    z-index: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.price-plan hr{
+    color: #6e6e74;
+}
+
+.price-plan-center{
+    background-color: #ffffff;
+    box-shadow: 1px 0px 32px -4px rgba(174,174,174,1);
+-webkit-box-shadow: 1px 0px 32px -4px rgba(174,174,174,1);
+-moz-box-shadow: 1px 0px 32px -4px rgba(174,174,174,1);
+    z-index: 1;
+    position: relative;         
+    top: -20px;
+}
+
+.rand{
+    font-size: xx-large;
 }
