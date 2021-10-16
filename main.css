@@ -12,7 +12,7 @@ html {
     padding: 0;
 }
 
-body{
+html {
     width: 100%;
 
 }
@@ -55,6 +55,20 @@ a {
 .landing-message h1,
 .landing-message p {
     color: white;
+}
+
+@media (max-width: 576px) {
+    .landing-text {
+        visibility: hidden;
+    }
+
+    .landing-message {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -20%);
+    }
+
 }
 
 .btn {
@@ -136,9 +150,16 @@ a {
 
 .service-item h6,
 .service-item-right h6 {
-    font-weight: 600;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
+.service-item .fa,
+.service-item-right .fa {
+    color: #1DC5F6;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
 
 .about-content {
     width: 100vw;
@@ -150,12 +171,12 @@ a {
     margin-bottom: -380px;
 }
 
-.about-image{
+.about-image {
     position: relative;
-    z-index: 1;    
+    z-index: 1;
 }
 
-.Partners{
+.Partners {
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #f9f9f9;
@@ -169,11 +190,11 @@ a {
         margin-bottom: 0px;
     }
 
-    .about-image{
+    .about-image {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;    
+        width: 50%;
     }
 
 }
@@ -189,6 +210,10 @@ a {
     }
 
     .about-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
         padding-left: 1em;
         margin-bottom: 2em;
         height: 300px;
@@ -199,6 +224,8 @@ a {
         padding-left: 4em;
         padding-right: 4em;
         width: 100vw;
+        top: 0px;
+        margin-bottom: 0px;
     }
 
     .btn-work {
@@ -223,14 +250,19 @@ a {
 
 }
 
-@media (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 1366px) {
     .stat-info {
         position: relative;
         left: 50%;
         top: 100%;
         transform: translate(-50%, -200%);
     }
-    
+
+    .about-content {
+        top: -450px;
+        margin-bottom: -450px;
+    }
+
 
 }
 
@@ -253,76 +285,108 @@ a {
     padding: 0 0 0 0;
 }
 
-.item{
+.item {
     overflow: hidden;
     background-color: #1DC5F6;
 }
 
-.item img{
+.item img {
     transition: transform .5s ease, opacity .5s ease;
 }
 
-.item img:hover{
-    transform: scale(1.3); 
+.item img:hover {
+    transform: scale(1.3);
     opacity: 40%;
 }
 
-.user{
+.user {
     border-radius: 50%;
     box-shadow:
-      1px 2px 2px hsl(220deg 60% 50% / 0.333),
-      2px 4px 4px hsl(220deg 60% 50% / 0.333),
-      3px 6px 6px hsl(220deg 60% 50% / 0.333);
+        1px 2px 2px hsl(220deg 60% 50% / 0.333),
+        2px 4px 4px hsl(220deg 60% 50% / 0.333),
+        3px 6px 6px hsl(220deg 60% 50% / 0.333);
     margin-bottom: 3em;
 }
 
+@media (max-width: 576px) {
+    .testimonial-text {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 976px) {
+    .stats{
+        margin-top: 30px;
+    }
+}
+
+section#counter-stats {
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+}
+
 .stats {
-    margin-top: 5em;
-    
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.stats img {
-    filter: brightness(30%);
+.stats .fa {
+  color: #1DC5F6;
+  font-size: 60px;
 }
 
-.stat-info {
-    position: relative;
-    top: -200px;
-    margin-bottom: -10px;
-    padding: 10px;
-
+.stats-container{
+    margin-top: 75px;
+    margin-bottom: 75px;
 }
 
-.stat-info h4,
-.stat-info h1 {
-    color: white;
-}
+/*/ end count stats /*/
 
-.display-4{
+.display-4 {
     font-weight: 700;
 }
 
-.price-plan{
+.price-plan {
     background-color: #f9f9f9;
     z-index: 0;
     padding-left: 30px;
     padding-right: 30px;
 }
 
-.price-plan hr{
+.price-plan hr {
     color: #6e6e74;
 }
 
-.price-plan-center{
+.price-plan-center {
     background-color: #ffffff;
-    box-shadow: 1px 0px 32px -4px rgba(174,174,174,1);
--webkit-box-shadow: 1px 0px 32px -4px rgba(174,174,174,1);
--moz-box-shadow: 1px 0px 32px -4px rgba(174,174,174,1);
+    box-shadow: 1px 0px 32px -4px rgba(174, 174, 174, 1);
+    -webkit-box-shadow: 1px 0px 32px -4px rgba(174, 174, 174, 1);
+    -moz-box-shadow: 1px 0px 32px -4px rgba(174, 174, 174, 1);
     z-index: 1;
-    position: relative;         
+    position: relative;
     top: -20px;
+    padding-bottom: 50px;
+    padding-top: 20px;
 }
 
-.rand{
+.price-plan-side{
+    margin-bottom: 50px;
+}
+
+.rand {
     font-size: xx-large;
 }
+
+@media (max-width: 576px) {
+    .price-plan {
+        width: 80%;
+        margin-left: 50px;
+        margin-bottom: 70px;
+        top: 0px;
+    }
+}
+
