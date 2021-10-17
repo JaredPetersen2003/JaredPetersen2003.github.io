@@ -10,6 +10,7 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 html {
@@ -37,10 +38,12 @@ h2 {
 a {
     color: #1DC5F6;
     size: 232px;
+    text-decoration: none;
 }
 
 .navbar {
     border-bottom: 1px solid #cccccc;
+    z-index: 5;
 }
 
 .landing-message {
@@ -182,6 +185,13 @@ a {
     background-color: #f9f9f9;
 }
 
+@media (min-width: 768px) and (max-width: 967px) {
+    .about-content {
+        top: -380px;
+        margin-bottom: -380px;
+    }
+}
+
 
 @media (max-width: 576px) {
     .about-content {
@@ -250,7 +260,7 @@ a {
 
 }
 
-@media (min-width: 769px) and (max-width: 1366px) {
+@media (min-width: 968px) and (max-width: 1366px) {
     .stat-info {
         position: relative;
         left: 50%;
@@ -381,12 +391,68 @@ section#counter-stats {
     font-size: xx-large;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .price-plan {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 80%;
-        margin-left: 50px;
-        margin-bottom: 70px;
         top: 0px;
+        margin-bottom: 50px;
     }
 }
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0; }
+    .form-control:active, .form-control:focus {
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-color: #000; }
+  
+  .btn, .form-control {
+    height: 55px; }
+  
+  form.border-right {
+    padding-right: 6rem !important; }
+    @media (max-width: 991.98px) {
+      form.border-right {
+        padding-right: 0 !important;
+        border-right: none !important; } }
+  
+  label.error {
+    font-size: 12px;
+    color: red; }
+  
+  #message {
+    resize: vertical; }
+  
+  #form-message-warning, #form-message-success {
+    display: none; }
+  
+  #form-message-warning {
+    color: #B90B0B; }
+  
+  #form-message-success {
+    color: #55A44E;
+    font-size: 18px;
+    font-weight: bold; }
+  
+  .submitting {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000; }
+  
+
+footer {
+    background: #212529;
+  }
 
