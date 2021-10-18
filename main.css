@@ -45,9 +45,9 @@ a {
     font-size: 14em !important;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1400px) {
     .display-1{
-        font-size: 12em !important;
+        font-size: 10em !important;
     }
     
 }
@@ -85,6 +85,10 @@ a {
     transform: translate(-50%, -50%);
     padding: 10px;
 
+}
+
+.message-low{
+    transform: translate(-50%, -22%);
 }
 
 .landing-message h1,
