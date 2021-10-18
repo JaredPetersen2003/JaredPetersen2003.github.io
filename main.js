@@ -1,5 +1,5 @@
 window.addEventListener('scroll', function(){
-  var scroll_y = this.scrollY + (screen.height / 2);
+  var scroll_y = this.scrollY + (screen.height / 1.8);
   var alertOn = document.getElementById('counter-stats').offsetTop;
   console.log(scroll_y);
   if(scroll_y > alertOn){

@@ -41,6 +41,38 @@ a {
     text-decoration: none;
 }
 
+.display-1{
+    font-size: 14em !important;
+}
+
+@media (max-width: 1366px) {
+    .display-1{
+        font-size: 12em !important;
+    }
+    
+}
+
+@media (max-width: 976px) {
+    .display-1{
+        font-size: 9em !important;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .display-1{
+        font-size: 6em !important;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .display-1{
+        font-size: 4em !important;
+    }
+    
+}
+
 .navbar {
     border-bottom: 1px solid #cccccc;
     z-index: 5;
@@ -65,11 +97,11 @@ a {
         visibility: hidden;
     }
 
-    .landing-message {
+    .welcome-message {
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -20%);
+        transform: translate(-50%, -16%);
     }
 
 }
