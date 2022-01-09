@@ -1,8 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
 
-html {
-    overflow-x: hidden;
-}
 
 
 * {
@@ -12,10 +9,14 @@ html {
     padding: 0;
     
 }
-
-html {
-    width: 100%;
-
+html,
+body {
+    overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -75,7 +76,11 @@ a {
 
 .navbar {
     border-bottom: 1px solid #cccccc;
-    z-index: 5;
+    z-index: 999;
+}
+
+nav{
+    z-index: 999; 
 }
 
 .landing-message {
@@ -134,7 +139,6 @@ a {
 
 .landing {
     height: 93vh;
-    margin-top: 70px;
 }
 
 
@@ -221,6 +225,10 @@ a {
     background-color: #f9f9f9;
 }
 
+.partner-logo{
+    margin: 0px 0px 0px 0px;
+}
+
 @media (min-width: 768px) and (max-width: 967px) {
     .about-content {
         top: -380px;
@@ -272,7 +280,7 @@ a {
         width: 100vw;
         top: 0px;
         margin-bottom: 0px;
-    }
+    }    
 
     .btn-work {
         margin-left: 40vw;
@@ -296,6 +304,20 @@ a {
 
 }
 
+@media screen and (max-width: 968px) {
+    .service-item,
+    .service-item-right {
+        padding-top: 1em;
+        border-right: 0px;
+        margin-top: 2em;
+    }
+
+    .service-container{
+        margin-top: 0;
+    }
+
+}
+
 @media (min-width: 968px) and (max-width: 1366px) {
     .stat-info {
         position: relative;
@@ -307,6 +329,12 @@ a {
     .about-content {
         top: -450px;
         margin-bottom: -450px;
+    }
+
+    .service-item,
+    .service-item-right {
+        padding-top: 1em;
+        border-right: 0px;
     }
 
 
@@ -331,16 +359,16 @@ a {
     padding: 0 0 0 0;
 }
 
-.item {
+.gallery-item {
     overflow: hidden;
     background-color: #1DC5F6;
 }
 
-.item img {
+.gallery-item img {
     transition: transform .5s ease, opacity .5s ease;
 }
 
-.item img:hover {
+.gallery-item img:hover {
     transform: scale(1.3);
     opacity: 40%;
 }
@@ -490,5 +518,6 @@ section#counter-stats {
 
 footer {
     background: #212529;
+    width: 100vw;
   }
 
